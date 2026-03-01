@@ -106,7 +106,7 @@ BEGIN
 		TRUNCATE TABLE bronze.src_players ;
 		PRINT 'INSERTING DATA INTO : bronze.src_players';
 		BULK INSERT bronze.src_players
-		FROM 'D:\SQL\sql_football_dataset_dwh\datasets\players_fix.csv'
+		FROM 'D:\SQL\sql_football_dataset_dwh\datasets\players.csv'
 		WITH ( 
 			FIRSTROW=2,
 			FIELDTERMINATOR = ',',
